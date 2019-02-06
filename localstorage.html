@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Localstorage example</title>
+        <script src="First_js_code.js"></script>
+    </head>
+    <body>
+        <!-- ctrl / global script -->
+        <!-- internal script -->
+        <script>
+            alert('global script')
+            function test(){
+                console.log("test invoked")
+                // this will be displayed only in the console window and won't appear at the browser window
+            }
+        </script>
+        <p>This will be cleared after button click</p>
+        <!-- inline script -->
+        <button onclick="alert('clicked');alert('clicked1')">Click1</button>
+        <button onclick='test1()'>Click2</button>
+
+    </body>
+
+</html>
